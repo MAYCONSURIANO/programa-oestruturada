@@ -1,0 +1,27 @@
+//Escreva um programa em C que pergunte o dia, mês e ano do aniversário de uma pessoa e diga se a data é válida ou não. Caso não seja, diga o motivo. Suponha que todos os meses têm 31 dias e que estejamos no ano de 2015.
+#include <stdio.h>
+int main()
+{
+    int mes;
+    int dia;
+    int ano;
+    printf("Digite o dia, do aniversário de uma pessoa e irei mostrar se a data é válida ou não:" );
+    scanf("%d",&dia);
+         printf("Digite o mês, do aniversário de uma pessoa e irei mostrar se a data é válida ou não:" );
+            scanf("%d",&mes);
+                printf("Digite o ano, do aniversário de uma pessoa e irei mostrar se a data é válida ou não:" );
+                    scanf("%d",&ano);
+if (dia<=31 && dia>0)
+printf("Dia válido, ");
+ else printf("Dia inválido, tem que ser menor ou igual a 31, "); 
+    
+        if (mes>0 && mes<13 )
+          printf("Mês válido, ");
+           else printf("Mês inválido, tem que ser menor ou igual a 12, ");
+            if (ano!=2015){
+            printf("Ano inválido, o ano tem que ser 2015 ");
+          }
+               else {
+                printf("Ano válido ");}
+printf("a sua data é: %d/%d/%d", dia, mes, ano);
+}
