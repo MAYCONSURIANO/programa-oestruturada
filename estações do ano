@@ -1,0 +1,19 @@
+//Implementar um algoritmo em C que verifica a estação do ano partir do mês. O algoritmo deve, dado um mês retornar o valor a qual estação ele pertence (primavera, verão, outono e inverno).
+//Entrada(s): mês em formato de número (1 para Janeiro, 2 Fevereiro … 12 Dezembro).
+//Saída: estação do ano.
+#include <stdio.h>
+main(){
+int n;
+printf ("Digite o número do mês do ano e tecle enter para saber a estação: ");
+scanf ("%d", &n);
+if (n<=3 && n>=1)
+    printf("A estação é Verão");
+    if (n>=4 && n<=6)
+        printf("A estação é Outono");
+        if (n>=7 && n<=9)
+         printf("A estação é Inverno");
+              if (n>=10 && n<=12)
+                printf("A estação é Primavera");
+                    if (n>12 || n<=0)
+                printf("Este não é um número válido ");
+}
